@@ -1,0 +1,16 @@
+- locals[:arts].each do |name, art|
+  %article.article
+    %a.article__title-wrapper(href="/p/#{name}")
+      %h2.article__title
+        =art[:heading]
+    =haml art[:content]
+    .article__footer.article-meta
+      %section.article-meta__date
+        %span.article-meta__date-emoji 🕑
+        %span.article-meta__date-string
+          =art[:date]
+      %section.article-meta__tags-list
+        %span.tags-list__emoji 🏷️
+        - art[:tags].each do |tag|
+          %a.tag(href="/t/#{tag}")<
+            =tag

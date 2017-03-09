@@ -1,0 +1,13 @@
+.article {
+  margin: 32px 0;
+}
+.article p {
+  line-height: 150%;
+}
+.article__title {
+  margin: 8px 0;
+}
+.article-meta section {
+  display: inline;
+  margin-right: 10px;
+}

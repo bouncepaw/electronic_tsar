@@ -1,0 +1,30 @@
+.header {
+  display: block;
+}
+.header__logo {
+  height: 60px;
+}
+.admin .header__admin-sym {
+  display: block;
+  text-decoration: none;
+  color: black;
+  float: right;
+}
+.wrapper {
+  text-align: center;
+  background-color: #fff;
+}
+.content {
+  display: inline-block;
+  text-align: left;
+}
+@media (min-width: 700px) {
+  .content {
+    width: 700px;
+  }
+}
+@media (max-width: 700px) {
+  .content {
+    width: 100%;
+  }
+}

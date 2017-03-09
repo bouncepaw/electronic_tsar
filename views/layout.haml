@@ -1,0 +1,15 @@
+!!! 5
+%html
+  %head
+    %title Уютная Тумбочка
+    %link(href="/css/anchor.css" rel="stylesheet")/
+    %link(href="/css/article.css" rel="stylesheet")/
+    %link(href="/css/layout.css" rel="stylesheet")/
+%body.admin
+  %header.header
+    %a.header__main-page-link(href="/")
+      %img.header__logo(src="/img/main/logo.png")/
+    %a.header__admin-sym(href="/admin") ✡
+  .wrapper
+    .content
+      =yield
